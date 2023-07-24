@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body {
+  background: #83eaf1;
+  min-width: 100vh;
+  width: 100%;
+  text-transform: capitalize;
+}
+nav .navContent {
+  /* border: 1px solid red; */
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin-top: 0.5rem;
+  align-items: center;
+  /* background: #fff; */
+}
+nav img {
+  width: 13rem;
+
+  /* filter: brightness(0) invert(1); */
+}
+nav ul li {
+  display: inline-block;
+  margin-right: 1.5rem;
+  font-size: 1.5rem;
+}
+.container .layerContainer {
+  /* border: 1px solid #fff; */
+}
+.container .layerContainer .inform .mobile img {
+  width: 15rem;
+  margin-left: 14rem;
+  margin-top: 5rem;
+}
+.container .layerContainer .inform {
+  height: 60rem;
+  width: 60rem;
+
+  /* background: #fff; */
+}
+/* .container .layerContainer .circle .feature {
+  transform: rotate(90deg);
+} */
+
+.container .layerContainer .inform:after {
+  content: " ";
+  position: absolute;
+  height: 60rem;
+  width: 60rem;
+  /* background: rgb(241, 241, 241); */
+  top: -5rem;
+  left: -10rem;
+  z-index: -1;
+  border-radius: 50%;
+}
+.container .layerContainer .inform .circle .feature {
+  position: absolute;
+  display: flex;
+  align-items: center;
+}
+.container .layerContainer .inform .circle .feature img {
+  width: 4rem;
+  filter: brightness(0) invert(0);
+}
+.feature.one {
+  top: 2rem;
+  left: 17rem;
+}
+.feature.two {
+  top: 21rem;
+  left: 32rem;
+}
+.feature.three {
+  top: 46rem;
+  left: 15rem;
+}
+.feature.four {
+  top: 21rem;
+  left: 1rem;
+}
+.feature div p {
+  margin-top: 0.3rem;
+}
+.featu {
+  border: 1px solid #fff;
+  width: 20%;
+  position: absolute;
+  text-align: center;
+
+  top: 22rem;
+  right: 3rem;
+}
+.featu h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.featu ion-icon {
+  font-size: 1.8rem;
+}
