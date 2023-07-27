@@ -12,10 +12,13 @@ x {
   --blue-color: #1b145d;
   --white-color: #fff;
   --sami-black-color: #5b5b5b;
+  --sami-black2-color: #545454;
+
   --pink-color: #fcf7fa;
   --samipink-color: #faf8fb;
   --sky-blucolor: #f4f9fb;
-  --green-color: #3bf3b2;
+  --green-color: #3cd29d;
+  --green-color2: #20aca0;
   --same2black-color: #525862;
   --green2-color: #6dc9c1;
   --Athens-Gray: #f3f4f6;
@@ -23,7 +26,7 @@ x {
   --French-Rose: #f05672;
   --Astral-color: #2f85b2;
   --Jaffa-color: #f58145;
-  --black-color: #111111;
+  --black-color: #000000;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -238,7 +241,7 @@ font page design
 .secndeSection {
   background: var(--Athens-Gray);
   width: 100%;
-  height: ;
+  /* height: ; */
 }
 .uplodeImage {
   position: relative;
@@ -468,26 +471,36 @@ font page design
   /* border: 1px solid red; */
 }
 
-/* 
-***** head shot section *************
+/* --------------------------
+***** head shot section 
+*************
 
-*/
+---------------------*/
 .head-shots {
   min-height: 10vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  /* border: 1px solid ; */
   flex-direction: column;
+  padding: 3.5rem 0;
 }
 
 .head-shots .details-sec {
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  min-height: 50vh;
+  /* margin-bottom: 1rem; */
+}
+.head-shots .details-sec .small {
+  font-weight: 800;
+  color: var(--green-color2);
+  font-size: 1.2rem;
 }
 .details-sec .h1-sec {
   /* border: 1px solid rgb(11, 110, 11); */
@@ -499,12 +512,156 @@ font page design
 }
 .details-sec .h1-sec h1 {
   /* border: 1px solid red; */
-  font-size: 2.8rem;
+  font-size: 2.9rem;
   margin: 0;
   text-align: center;
+  font-weight: 450;
+  color: var(--blue-color);
+  line-height: 50px;
 }
 .details-sec .h1-sec p {
   text-align: center;
   /* border: 1px solid rgb(255, 106, 0); */
   margin-top: 10px;
+  /* opacity: 20%; */
+  color: var(--sami-black-color);
+}
+.h1-sec p span {
+  color: var(--same2black-color);
+  opacity: 100% !important;
+  font-weight: 600;
+}
+
+/***********
+----------------- btn section
+************/
+
+.details-sec .btn-sec {
+  /* outline: 1px solid green; */
+  padding: 1rem 2rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  background: var(--blue-color);
+  border-radius: 5px;
+}
+.details-sec .btn-sec a {
+  color: var(--white-color);
+}
+/*--------------------------------------
+*** image section of head shot
+************************/
+
+/* ----------------
+small details
+ ---------------*/
+
+.img-sec .short-detali {
+  color: var(--black-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 100%;
+  animation: opacity-change-2x 1s linear infinite alternate both;
+
+  /* outline: 1px solid green; */
+}
+.img-sec .short-detali p {
+  text-align: center;
+  font-size: 14px;
+  opacity: 80%;
+}
+/*  ---------------
+animation past
+-----------*/
+@keyframes opacity-change-2x {
+  0% {
+    opacity: 40%;
+  }
+  100% {
+    background: 100%;
+  }
+}
+
+.opcity-change-2x {
+}
+.img-sec .boxes {
+  /* outline: 1px solid #0a3eae; */
+  width: 82vw;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+.img-sec .boxes .box img {
+  width: 9.5rem;
+  height: 14rem;
+  object-fit: cover;
+}
+
+/* ----------------
+
+logos section
+
+------------- */
+.clogo-sec .logos {
+  /* outline: 1px solid #0a3eae; */
+  width: 50vw;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+  margin-top: 2rem;
+}
+.clogo-sec .logos .logo img {
+  width: 8rem;
+  /* border: 1px solid red; */
+  height: 30px;
+  object-fit: cover;
+  scale: 0.8;
+  /* gap: 2rem; */
+}
+
+/* ---------------
+footer section **************
+-----------------*/
+.footersection {
+  height: 20vh;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem 3rem;
+  background: var(--Athens-Gray);
+}
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  /* border: 1px solid red; */
+}
+footer p,
+footer a {
+  color: var(--sami-black2-color);
+}
+
+footer .fastp {
+  /* outline: 1px solid rgb(0, 255, 55); */
+  width: 15rem;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer .fastp p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+footer .fastp .logo {
+  width: 12rem;
+  scale: 1.2;
+}
+
+footer .secndp {
+  display: inline-block;
+  /* border: 1px solid red; */
+}
+footer .secndp a {
+  padding: 0 0.5rem;
 }
